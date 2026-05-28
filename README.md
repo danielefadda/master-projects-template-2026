@@ -34,11 +34,12 @@ Dopo aver installato Jekyll sulla tua macchina:
    - Aggiungi i membri del tuo team in `_data/members.yml`.
 
 3. **Aggiungi i tuoi contenuti:**  
-   - Crea e modifica le pagine in `docs/_pages/` (es. `index.md`, `project.md`, `team.md`).
+   - Crea e modifica le pagine in `_pages/` (es. `index.md`, `project.md`, `team.md`).
    - Aggiungi immagini in `assets/images/` e grafici in `assets/charts/`.
 
 4. **Pubblica il tuo sito:**  
-   - Abilita GitHub Pages nelle impostazioni del repo (branch: `main`, cartella: `docs`).
+   - Crea il branch `gh-pages`.
+   - Utilizza la action custom per pubblicare il sito su GitHub Pages.
    - Il tuo sito sarà disponibile all'indirizzo `https://<username>.github.io/<repo>/`.
 
 Per istruzioni dettagliate, consulta i contenuti del template.
