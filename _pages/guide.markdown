@@ -168,6 +168,7 @@ Ci sono anche alcune variabili che possono essere utilizzate per personalizzare 
 ├─ 🌐 Pubblicare con GitHub Pages
 │   ├─ ⚙️ Vai a Settings → Pages
 │   ├─ 📂 Seleziona il branch su cui pubblicare (`gh-pages`)
+|   ├─ ▶️ Andare nel menu Actions e lanciare la action "Publish site to gh-pages branch" per pubblicare il sito
 │   └─ 🚀 Il sito è online su https://<username>.github.io/<repo>/
 ```
 
@@ -180,7 +181,7 @@ Per distribuire il tuo progetto su GitHub Pages, puoi seguire i seguenti passagg
 4. Clicca su "Save" per abilitare GitHub Pages.
 5. Il tuo sito sarà pubblicato all'indirizzo `https://<username>.github.io/<repository-name>/`.
 
-Una volta abilitato GitHub Pages, ogni volta che lanci la action, il tuo sito verrà automaticamente aggiornato.
+Una volta abilitato GitHub Pages, ogni volta che lanci la action "Publish site to gh-pages branch", il tuo sito verrà automaticamente aggiornato.
 
 <br>
 
