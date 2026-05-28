@@ -67,7 +67,7 @@ Una volta clonato il repository, troverai una struttura di cartelle simile alla 
 
 
 ```bash
-project-template/docs/
+project-template/
 │
 ├── _config.yml              # impostazioni di base del sito
 ├── _data/
@@ -167,19 +167,20 @@ Ci sono anche alcune variabili che possono essere utilizzate per personalizzare 
 ```
 ├─ 🌐 Pubblicare con GitHub Pages
 │   ├─ ⚙️ Vai a Settings → Pages
-│   ├─ 📂 Seleziona branch + directory root
+│   ├─ 📂 Seleziona il branch su cui pubblicare (`gh-pages`)
 │   └─ 🚀 Il sito è online su https://<username>.github.io/<repo>/
 ```
 
 Per distribuire il tuo progetto su GitHub Pages, puoi seguire i seguenti passaggi:
 
+1. Crea un nuovo branch chiamato `gh-pages` nel tuo repository. (Puoi farlo usando Git o direttamente su GitHub).
 1. Vai alle impostazioni del repository su GitHub.
 2. Scorri fino alla sezione "GitHub Pages".
-3. **Seleziona il branch `main` e la cartella `docs`**.
+3. **Seleziona il branch `gh-pages`**.
 4. Clicca su "Save" per abilitare GitHub Pages.
 5. Il tuo sito sarà pubblicato all'indirizzo `https://<username>.github.io/<repository-name>/`.
 
-Una volta abilitato GitHub Pages, ogni volta che effettui il push delle modifiche al branch selezionato, il tuo sito verrà automaticamente aggiornato.
+Una volta abilitato GitHub Pages, ogni volta che lanci la action, il tuo sito verrà automaticamente aggiornato.
 
 <br>
 
@@ -196,10 +197,10 @@ Una volta abilitato GitHub Pages, ogni volta che effettui il push delle modifich
 │   └─ ✏️ Ogni file: front matter → layout, title, subtitle, vega, header_type, ecc.
 ```
 
-Ogni file Markdown nella cartella `docs/_pages` corrisponde a una pagina nel sito web finale. L'aggiunta e la modifica delle pagine possono essere effettuate direttamente nel repository GitHub.
+Ogni file Markdown nella cartella `_pages` corrisponde a una pagina nel sito web finale. L'aggiunta e la modifica delle pagine possono essere effettuate direttamente nel repository GitHub.
 
 Per aggiungere una pagina, segui questi passaggi:
-- naviga nella cartella docs/_pages e seleziona **Add file** poi **Create new file**
+- naviga nella cartella `_pages` e seleziona **Add file** poi **Create new file**
   ![](assets/images/add-page.png)
 - Assicurati che il nome del tuo nuovo file termini con l'estensione `.md` o `.markdown` (ad esempio, `about.md).`
 - La tua nuova pagina è ora pronta per essere modificata! Ti consiglio di scrivere un front matter di base per iniziare.
@@ -207,7 +208,7 @@ Per aggiungere una pagina, segui questi passaggi:
 Il nome del file verrà utilizzato come URL della pagina. Ad esempio, se crei un file chiamato `about.md`, sarà accessibile all'indirizzo `https://<username>.github.io/<repository-name>/about/`.
 
 ```bash
-big-data-project/
+g0-2026-website/
 │
 ├── _pages/
 │   ├── index.md
@@ -250,7 +251,7 @@ In questo paragrafo usiamo una classe `.lead` per evidenziare i punti principali
     Puoi scrivere un'intera pagina usando solo la sintassi markdown, ma puoi anche usare tag HTML per aggiungere elementi più complessi o <strong>layout non standard</strong>. In questo esempio, usiamo un paragrafo con una classe <code>.green</code> per evidenziare il testo in colore verde.
 </p>
 
-Questo tema è basato su Bootstrap, quindi puoi usare tutte le classi Bootstrap per stilizzare il tuo contenuto. Ad esempio, puoi usare la classe `.container` per creare un container responsive, o le classi `.row` e `.col-*` per creare un layout a griglia.
+Questo tema è basato su Bootstrap, quindi puoi usare tutte le classi Bootstrap per personalizzare il tuo contenuto. Ad esempio, puoi usare la classe `.container` per creare un container responsive, o le classi `.row` e `.col-*` per creare un layout a griglia.
 
 Puoi trovare maggiori informazioni sulle classi Bootstrap a questa pagina: [Documentazione Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/){:target="_blank"}.
 
@@ -647,9 +648,9 @@ Puoi anche usare la classe `full-width-wrapper` per creare una sezione a larghez
     </div>
 </div>
 
-# Riepilogo ad albero
+# Riepilogo
 
-Questa è una panoramica sintetica dei passaggi visti in questa guida:
+Questa che segue è una panoramica sintetica dei passaggi visti in questa guida:
 
 ```
 💡 Guida: Costruire un sito web con Jekyll
@@ -658,7 +659,7 @@ Questa è una panoramica sintetica dei passaggi visti in questa guida:
 │   ├─ 📥 Clonare via "Import repository"
 │   ├─ 🏷️ Rinominare il repo (es. g0-2026-website)
 │   ├─ 👥 Invitare i collaboratori
-│   └─ 🖥️ (Opzionale) Sviluppo locale con ruby installato
+│   └─ 🖥️ Sviluppo locale con ruby installato
 │       ├─ 🔧 bundle install
 │       └─ 👉 bundle exec jekyll serve → http://127.0.0.1:4000/<repo-name>
 │
@@ -672,8 +673,9 @@ Questa è una panoramica sintetica dei passaggi visti in questa guida:
 │   └─ 🔗 github_repo (footer, link)
 │
 ├─ 4. 🌐 Pubblicare il progetto su GitHub Pages
+|   ├─ 🪾 Crea branch `gh-pages`
 │   ├─ ⚙️ Vai a Settings → Pages
-│   ├─ 📂 Seleziona branch + directory root
+│   ├─ 📂 Seleziona branch `gh-pages`
 │   └─ 🚀 Il sito è online su https://<username>.github.io/<repo>/
 │
 ├─ 5. 📄 Creare pagine
