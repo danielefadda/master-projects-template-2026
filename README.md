@@ -39,7 +39,7 @@ Dopo aver installato Jekyll sulla tua macchina:
 
 4. **Pubblica il tuo sito:**  
    - Crea il branch `gh-pages`.
-   - Utilizza la action custom per pubblicare il sito su GitHub Pages.
+   - Utilizza la action `Publish site to gh-pages branch` per pubblicare il sito su GitHub Pages.
    - Il tuo sito sarà disponibile all'indirizzo `https://<username>.github.io/<repo>/`.
 
 Per istruzioni dettagliate, consulta i contenuti del template.
