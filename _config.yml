@@ -71,6 +71,8 @@ navbar:
           url: /folium.html
         - title: Slider
           url: /slider.html
+        - title: Scrollytelling
+          url: /scrollama.html
 
     - title: SBD Master # deve essere sempre l'ultimo elemento della navbar, non modificarlo
       url: https://masterbigdata.it/

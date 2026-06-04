@@ -58,6 +58,12 @@
         "title": "Valore"
       }
     },
+    "color": {
+          "condition": {
+            "test": "datum['b'] > 85", "value": "green"
+          },
+          "value": "gray"
+      },
     "tooltip": [
       {
         "field": "a",

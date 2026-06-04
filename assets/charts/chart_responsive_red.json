@@ -81,6 +81,7 @@
   "height": 300,
   "mark": {
     "type": "bar",
+    "color": "red",
     "cornerRadiusTopLeft": 4,
     "cornerRadiusTopRight": 4,
     "cursor": "pointer"
